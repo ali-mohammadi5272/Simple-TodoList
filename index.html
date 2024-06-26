@@ -8,13 +8,19 @@
   </head>
   <body>
     <main class="todoList">
-      <header class="todoList__title"></header>
-      <form action="">
-        <input type="text" />
-        <input type="submit" value="Add" />
+      <header class="todoList__title">Todo List</header>
+      <form action="" class="todoList__form">
+        <input type="text" class="todoList__textInput" />
+        <input type="submit" value="Add" class="todoList__submitInput" />
       </form>
       <ul class="todoList__todos">
-        <li class="todoList__todoItem">Learn NextJS</li>
+        <li class="todoList__todoItem">
+          <p class="todoList__todoTitle">Learn NextJS</p>
+          <p>
+            <span class="todoList__done">❌</span>
+            <span class="todoList__remove">💣</span>
+          </p>
+        </li>
       </ul>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
