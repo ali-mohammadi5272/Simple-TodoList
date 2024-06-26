@@ -1,8 +1,82 @@
+:root {
+  --border-radius: 5px;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+ul {
+  list-style-type: none;
+}
 body {
-  background-color: black;
+  background-color: #cea2a2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todoList {
+  box-shadow: 0px 0px 30px -5px #ffc0cb;
+  padding: 0px 20px;
+  border-radius: var(--border-radius);
+}
+.todoList__title {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  margin: 20px 0px 100px 0px;
+}
+.todoList__form {
+  display: flex;
+}
+.todoList__textInput,
+.todoList__submitInput {
+  padding: 10px;
+  border-color: #cea2a2;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+}
+.todoList__textInput {
+  width: 80%;
+}
+.todoList__submitInput {
+  width: 20%;
+}
+.todoList__todos {
+  padding: 10px 0px;
+}
+.todoList__todoItem {
+  padding: 10px;
+  margin: 10px 0px;
+  font-size: 20px;
+  border-radius: var(--border-radius);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  &:hover {
+    background-color: #f4f4f4;
+  }
+}
+.todoList__todoTitle {
+  &:hover {
+    text-decoration: line-through;
+  }
+}
+.todoList__done,
+.todoList__remove {
+  font-size: 25px;
+  cursor: pointer;
+}
+.todoList__done {
+}
+.todoList__remove {
 }
